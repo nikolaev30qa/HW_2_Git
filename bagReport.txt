@@ -1,0 +1,11 @@
+
+Pre-conditions: "The UserB was created
+Description: User Info: The 'Undo' button is disabled after clicking the 'Save' button
+Step To Reproduce: Log in under UserB
+       Select the 'User Info' tab
+       Edit the information from 'User Name' field
+       Click the 'Save' button
+       Navigate to the 'Undo' button
+Actual Result: The 'Undo' button is disabled after clicking the 'Save' button
+Expected Result: The 'Undo' button is activated after clicking the 'Save' button
+
