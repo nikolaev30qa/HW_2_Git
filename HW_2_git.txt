@@ -8,12 +8,11 @@ GitHub. HW_2
 - Charles --------- git branch Charles
 - Mobile testing --------- git branch MobileTesting
 
-2. Запушить все ветки на внешний репозиторий ------- git push -u origin Postman Jmeter CheckLists BagReports SQL Charles Mobile testing
-
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+2. Запушить все ветки на внешний репозиторий ------- git push origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репортаж:
 a) git checkout BagReport
 b) touch bugReport
-c) vim bugReport
+c) cat >> bugReport
 	Pre-conditions: "The UserB was created
 	Description: User Info: The 'Undo' button is disabled after clicking the 'Save' 	button
 	Step To Reproduce: Log in under UserB
@@ -25,11 +24,7 @@ c) vim bugReport
 	Expected Result: The 'Undo' button is activated after clicking the 'Save' button
 d) Ctrl+C
 
-4. Запушить структуру багрепорта на внешний репозиторий:
-a) git add bugReport
-b) git commit -m "add bugReport file"
-c) git push
-
+4. Запушить структуру багрепорта на внешний репозиторий ------ git push -u origin BugReports
 5. Вмержить ветку Bag Reports в Main ------ git merge BagReports -m "merge_BagReports"
 (Чтобы смержить на нужную нам ветку, мы должны для начала на нее СТАТЬ)
 6. Запушить main на внешний репозиторий -------- git push
@@ -37,7 +32,7 @@ c) git push
 7. В ветке CheckLists набросать структуру чек листа:
 a) git checkout CheckList
 b) touch CheckList.txt
-c) vim CheckList.txt
+c) cat >> CheckList.txt
 	Чек-лист Smoke-тестирования:
 	1. Сайт открывается и доступен.
 	2. Основные элементы сайта работают корректно.
@@ -47,11 +42,7 @@ c) vim CheckList.txt
 	6. Нет видимых ошибок на главной странице.
 d) Ctrl+C
 
-8. Запушить структуру CheckList на внешний репозиторий:
-a) git add CheckLists.txt
-b) git commit -m "add CheckList file"
-c) git push
-
+8. Запушить структуру CheckList на внешний репозиторий ------ git push -u origin CheckLists
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main ------ git merge CheckLists -m "merge_CheckList"
-10. Синхронизировать Внешнюю и Локальную ветки Main ------- git push
+10. Синхронизировать Внешнюю и Локальную ветки Main ------- git pull
 
